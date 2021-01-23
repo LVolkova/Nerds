@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Елена Волкова](https://up.htmlacademy.ru/htmlcss/30/user/185171).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
