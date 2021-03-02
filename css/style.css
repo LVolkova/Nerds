@@ -580,11 +580,11 @@ img {
   opacity: 1;
 }
 
-.sortingtype-item-down:before {
+.sortingtype-item-down a:before {
   content:url("../img/sorting-down.svg");
 }
 
-.sortingtype-item-up:before {
+.sortingtype-item-up a:before {
   content: url("../img/sorting-up.svg");
 }
 
@@ -634,6 +634,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
+  row-gap: 30px;
   list-style: none;
   padding: 0;
 }
@@ -651,7 +652,12 @@ img {
 }
 
 .product-popup {
+  display: table-cell;
+  width: 360px;
+  height: 230px;
   background-color: var(--basic-dark);
+  text-align: center;
+  vertical-align: middle;
 }
 
 .product-popup a {
