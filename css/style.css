@@ -102,17 +102,29 @@ img {
 }
 
 .main-header {
+  padding-top: 50px;
   background-color: var(--basic-dark);
 }
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: 160px 1fr min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--basic-dark);
 }
 
+.main-header-logo {
+  height: 65px;
+  width: 160px;
+}
+
 .site-navigation {
+  display: flex;
+  width: 440px;
+  justify-content: space-between;
+
   list-style: none;
+  padding: 0;
 }
 
 .site-navigation a,
@@ -137,7 +149,7 @@ img {
 }
 
 .basket {
-  background: url(../img/basket.svg) left top no-repeat;
+  background: url(../img/basket.svg) left center no-repeat;
   background-size: 15px 15px;
 }
 
@@ -162,20 +174,17 @@ img {
 }
 
 .feature-item:nth-child(1) {
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
+  background: url("../img/slide1.png") 760px 430px no-repeat;
   background-position: center right;
 }
 
 .feature-item:nth-child(2) {
-  background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
+  background: url("../img/slide2.png") 760px 430px no-repeat;
   background-position: center right;
 }
 
 .feature-item:nth-child(3) {
-  background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
+  background: url("../img/slide3.png") 760px 430px no-repeat;
   background-position: center right;
 }
 
@@ -184,12 +193,20 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+
   margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 80px;
 }
 
 .feature-item p:nth-child(2) {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.slide-button {
+  outline: 2px solid rgba(11, 56, 18, 0.808);
 }
 
 /* Services */
@@ -197,7 +214,7 @@ img {
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
+  gap: 40px;
   margin: 80px 0;
   padding: 0;
   list-style: none;
@@ -208,17 +225,17 @@ img {
 }
 
 .service-item:nth-child(1) {
-  background: var(--basic-dark) url("../img/service-web.png") no-repeat;
+  background: url("../img/service-web.png") no-repeat;
   background-position: left top;
 }
 
 .service-item:nth-child(2) {
-  background: var(--basic-dark) url("../img/service-app.png") no-repeat;
+  background: url("../img/service-app.png") no-repeat;
   background-position: left top;
 }
 
 .service-item:nth-child(3) {
-  background: var(--basic-dark) url("../img/service-pres.png") no-repeat;
+  background: url("../img/service-pres.png") no-repeat;
   background-position: left top;
   margin-right: 40px;
 }
@@ -229,13 +246,15 @@ img {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 160px;
+  padding-top: 170px;
   margin: 0;
+  margin-bottom: 15px;
 }
 
 .service-item p {
   font-size: 16px;
   line-height: 24px;
+  padding-bottom: 50px;
 }
 
 /* Button */
@@ -248,6 +267,8 @@ img {
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
+
+  padding: 16px 55px;
 }
 
 .button:hover,
@@ -288,9 +309,15 @@ img {
 /* Company */
 
 .index-columns {
-  display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 150px;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 75px;
+}
+
+.company {
+  max-width: 650px;
+  min-height: 415px;
 }
 
 .company p:nth-of-type(1) {
@@ -298,16 +325,21 @@ img {
   font-size: 45px;
   line-height: 45px;
   color: var(--text-dark);
+
+  margin: 75px 0 30px 0;
 }
 
 .company p:nth-of-type(2) {
   line-height: 24px;
+  margin-bottom: 40px;
 }
 
 .company p:nth-of-type(3) {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 }
 
 .dash-list {
@@ -317,12 +349,18 @@ img {
 .dash-list li {
   list-style-image: url(../img/dash.svg);
   line-height: 24px;
+  padding-bottom: 24px;
+}
+
+.dash-list li:last-child {
+  padding: 0;
 }
 
 /* Statistics */
 
 .statistics {
-  justify-self: right;
+  max-width: 360px;
+  min-height: 415px;
 }
 
 .statistics p {
@@ -333,7 +371,10 @@ img {
 }
 
 .statistics img {
+  width: 360px;
+  height: 210px;
   background-color: var(--basic-dark);
+  margin-top: 40px;
 }
 
 .statistics-list td {
@@ -350,11 +391,9 @@ img {
 /* Partners */
 
 .partners-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 40px;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
   list-style: none;
   padding: 0;
 }
