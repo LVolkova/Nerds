@@ -39,53 +39,65 @@
       <div class="catalog-columns container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filter" action="https://echo.htmlacademy.ru" method="get" oninput="minvalue.value=minprice.value">
+          <form class="filter" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-price">
               <legend>Стоимость:</legend>
-              <input type="range" name="price" id="price">
-              <p>
-                От <output name="minvalue"></output>
-                До <output name="maxvalue"></output>
-              </p>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 70%;"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 10%;"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 60%"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-grid">
               <legend>Сетка:</legend>
                 <ul>
                   <li>
-                    <input class="filter-input" type="radio" name="grid-group" id="grid-1" checked>
+                    <input class="filter-input-radio visually-hidden" type="radio" name="grid-group" id="grid-1" checked>
                     <label for="grid-1">Адаптивная</label>
                   </li>
                   <li>
-                    <input class="filter-input" type="radio" name="grid-group" id="grid-2">
+                    <input class="filter-input-radio visually-hidden" type="radio" name="grid-group" id="grid-2">
                     <label for="grid-2">Фиксированная</label>
                   </li>
                   <li>
-                    <input class="filter-input" type="radio" name="grid-group" id="grid-3">
+                    <input class="filter-input-radio visually-hidden" type="radio" name="grid-group" id="grid-3">
                     <label for="grid-3">Резиновая</label>
                   </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-features">
               <legend>Особенности:</legend>
               <ul>
                 <li>
-                  <input class="filter-input" type="checkbox" name="Slider" id="filter-slider" checked>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Slider" id="filter-slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li>
-                  <input class="filter-input" type="checkbox" name="advantages" id="filter-advantages">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages" id="filter-advantages">
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li>
-                  <input class="filter-input" type="checkbox" name="news" id="filter-news" checked>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
                 <li>
-                  <input class="filter-input" type="checkbox" name="gallery" id="filter-gallery">
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                   <label for="filter-gallery">Галерея</label>
                 </li>
                 <li>
-                  <input class="filter-input" type="checkbox" name="basket" id="filter-basket">
+                  <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="basket" id="filter-basket">
                   <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
