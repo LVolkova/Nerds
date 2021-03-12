@@ -761,15 +761,15 @@ img {
   position: absolute;
   left: 0;
   top: -2px;
-  width: 23px;
-  height: 23px;
-  background-image: url("../img/checkbox-off.svg");
+  width: 25px;
+  height: 25px;
+  background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.4;
 }
 
 .filter-input-checkbox:checked + label::before {
   content: "";
-  background-image: url("../img/checkbox-on.svg");
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .filter-input-radio:hover + label::before,
