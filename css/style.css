@@ -749,6 +749,10 @@ img {
   opacity: 0.1
 }
 
+.modal-feedback {
+  display: none;
+}
+
 /* Catalog */
 
 .page-catalog {
