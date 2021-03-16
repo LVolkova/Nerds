@@ -671,6 +671,7 @@ img {
 
 .feedback-item {
   width: 360px;
+  margin: 0;
 }
 
 .feedback-form label,
@@ -701,6 +702,7 @@ img {
 .feedback-form input[type="email"] {
   width: 360px;
   height: 50px;
+  margin-bottom: 34px;
 }
 
 .feedback input:hover {
@@ -731,15 +733,15 @@ img {
   right: 90px;
   width: 21px;
   height: 21px;
-  background-color: black;
   background: url(../img/close-icon.png) no-repeat;
+  padding: 0;
   border: none;
-  outline: none;
   opacity: 0.3;
 }
 
 .feedback-close:hover,
 .feedback-close:focus {
+  outline: none;
   opacity: 1;
 }
 
