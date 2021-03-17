@@ -116,7 +116,7 @@ img {
 }
 
 .main-header-logo {
-  height: 65px;
+  height: 66px;
   width: 160px;
 }
 
@@ -205,7 +205,7 @@ img {
 
 .feature-item:nth-child(1) {
   background: url("../img/slide1.png") no-repeat;
-  background-position: center right;
+  background-position: 398px center;
 }
 
 .feature-item:nth-child(2) {
@@ -229,20 +229,20 @@ img {
   line-height: 55px;
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding-top: 79px;
 }
 
 .feature-item-text {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 }
 
 .slider-controls {
   position: absolute;
-  bottom: 93px;
-  right: 540px;
+  bottom: 91px;
+  right: 542px;
   z-index: 5;
 }
 
@@ -253,7 +253,7 @@ img {
   border-radius: 50%;
   border: none;
   padding: 0;
-  margin-right: 14px;
+  margin-right: 13px;
   cursor: pointer;
 }
 
@@ -327,7 +327,7 @@ img {
   max-width: 260px;
   font-size: 16px;
   line-height: 24px;
-  padding-bottom: 32px;
+  padding-bottom: 33px;
   margin: 0;
 }
 
@@ -346,12 +346,12 @@ img {
   border-radius: 3px;
   box-sizing: border-box;
 
-  padding: 16px 54px;
+  padding: 17px 54px 15px;
 }
 
 .service-item .button {
-  padding: 16px 40px;
-  margin-bottom: 80px;
+  padding: 17px 40px 15px;
+  margin-bottom: 81px;
 }
 
 .button:hover,
@@ -400,7 +400,7 @@ img {
   justify-content: space-between;
   border-bottom: 2px solid #EEEEEE;
   box-sizing: border-box;
-  padding-bottom: 75px;
+  padding-bottom: 66px;
 }
 
 .company {
@@ -413,7 +413,7 @@ img {
   font-size: 45px;
   line-height: 45px;
   color: var(--text-dark);
-  margin: 73px 0 33px 0;
+  margin: 74px 0 32px 0;
 }
 
 .company-text {
@@ -438,7 +438,7 @@ img {
 
 .dash-list li {
   line-height: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 }
 
 .dash-list li::before {
@@ -464,7 +464,7 @@ img {
 
 .statistics p {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 31px;
   color: var(--text-dark);
   font-weight: 700;
   line-height: 24px;
@@ -484,7 +484,7 @@ img {
   width: 360px;
   margin-top: -12px;
   margin-left: -20px;
-  border-spacing: 20px 13px;
+  border-spacing: 20px 11px;
   text-align: left;
 }
 
@@ -510,6 +510,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  height: 180px;
   border-bottom: 2px solid #EEEEEE;
   box-sizing: border-box;
   list-style: none;
@@ -518,12 +519,14 @@ img {
 }
 
 .partner-item {
+  position: relative;
   width: 300px;
-  padding-top: 44px;
-  padding-bottom: 44px;
   text-align: center;
-  opacity: 0.2;
   outline-offset: -2px;
+}
+
+.partner-item a {
+  opacity: 0.2;
 }
 
 .partner-item:nth-child(4n),
@@ -531,16 +534,33 @@ img {
   width: 280px;
 }
 
-.partner-item:not(:nth-child(4n)):not(:last-child) {
-  background: url(../img/vertical-line.png) right center no-repeat;
+.partner-item:first-child img {
+  margin-top: 15px;
+  margin-right: 12px;
 }
 
-.partner-item:hover,
-.partner-item:focus {
+.partner-item:last-child img {
+  margin-top: 10px;
+  margin-left: 18px;
+}
+
+.partner-item:not(:nth-child(4n)):not(:last-child)::after { 
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: var(--basic-dark);
+  width: 2px;
+  height: 52px;
+}
+
+.partner-item a:hover,
+.partner-item a:focus {
   opacity: 1;
 }
 
-.partner-item:active {
+.partner-item a:active {
   opacity: 0.1;
 }
 
@@ -582,8 +602,10 @@ img {
 }
 
 .map-adress p:first-child {
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 23px;
 }
 
@@ -593,7 +615,7 @@ img {
 
 .map-button {
   min-width: 219px;
-  margin-top: 37px;
+  margin-top: 38px;
   padding-right: 45px;
   padding-left: 45px;
 }
@@ -602,7 +624,8 @@ img {
 
 .footer-columns {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 260px 1fr;
+  column-gap: 140px;
   margin-bottom: 70px;
 }
 
@@ -620,34 +643,34 @@ img {
   margin: 0;
 }
 
-.social-list li {
+.social-item {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background: var(--social-button) 50% 50% no-repeat;
 }
 
-.social-list .link-vk {
+.link-vk {
   background-image: url(../img/vk-icon.svg);
   background-size: 26px 15px;
 }
 
-.social-list .link-fb {
+.link-fb {
   background-image: url(../img/fb-icon.svg);
   background-size: 12px 22px;
 }
 
-.social-list .link-inst {
+.link-inst {
   background-image: url(../img/insta-icon.svg);
   background-size: 21px 21px;
 }
 
-.social-list li:hover,
-.social-list li:focus{
+.social-item:hover,
+.social-item:focus{
   background-color: var(--accent-hover);
 }
 
-.social-list li:active {
+.social-item:active {
   background-color: var(--accent-press);
   background-blend-mode: overlay;
 }
@@ -659,8 +682,7 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 6px 0 10px;
 }
 
 .friendship-discount p {
