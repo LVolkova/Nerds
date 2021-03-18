@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="img/icon180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page-body">
@@ -35,7 +35,6 @@
       <div class="page-catalog">
         <h1 class="page-title">Магазин готовых шаблонов</h1>
       </div>
-      ТЕСТ
       <div class="catalog-columns container">
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -47,8 +46,8 @@
                   <div class="scale">
                     <div class="bar" style="width: 70%;"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left: 10%;"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left: 60%"></div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 7%;"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 62%"></div>
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
@@ -138,8 +137,8 @@
               <img src="img/product-sedona.jpg" width="360" height="580" alt="Информационный сайт для туристов">
               <div class="product-popup">
                 <a href="#">Sedona</a>
-                <p>Информационный сайт для туристов</p>
-                <button class="product-button" type="button" name="sedona">9 900 ₽</button>
+                <p>Информационный сайт<br> для туристов</p>
+                <button class="product-button" type="button" name="sedona">9 900 <span>&#8381;</span></button>
               </div>
             </li>
             <li class="product-item">
@@ -147,7 +146,7 @@
               <div class="product-popup">
                 <a href="#">Pink App</a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <button class="product-button" type="button" name="pink-app">9 900 ₽</button>
+                <button class="product-button" type="button" name="pink-app">9 900 <span>&#8381;</span></button>
               </div>
             </li>
             <li class="product-item">
@@ -155,7 +154,7 @@
               <div class="product-popup">
                 <a href="#">Barbershop</a>
                 <p>Сайт салона красоты. <br>Для мужчин, да.</p>
-                <button class="product-button" type="button" name="barbershop">9 900 ₽</button>
+                <button class="product-button" type="button" name="barbershop">9 900 <span>&#8381;</span></button>
               </div>
             </li>
             <li class="product-item">
@@ -163,7 +162,7 @@
               <div class="product-popup">
                 <a href="#">Mishka</a>
                 <p>Интернет-магазин <br>вязаных игрушек</p>
-                <button class="product-button" type="button" name="mishka">9 900 ₽</button>
+                <button class="product-button" type="button" name="mishka">9 900 <span>&#8381;</span></button>
               </div>
             </li>
             <li class="product-item">
@@ -171,7 +170,7 @@
               <div class="product-popup">
                 <a href="#">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <button class="product-button" type="button" name="aplus">9 900 ₽</button>
+                <button class="product-button" type="button" name="aplus">9 900 <span>&#8381;</span></button>
               </div>
             </li>
             <li class="product-item">
@@ -179,7 +178,7 @@
               <div class="product-popup">
                 <a href="#">Кваст</a>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <button class="product-button" type="button" name="kvas">9 900 ₽</button>
+                <button class="product-button" type="button" name="kvas">9 900 <span>&#8381;</span></button>
               </div>
             </li>
           </ul>
@@ -205,29 +204,38 @@
     <footer class="main-footer">
 
       <section class="footer-map">
-        <!-- Здесь будет карта-->
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa663d021ccd6b1680364bb57b40531452bbced7210231ab522ef24e1b4d38533&amp;source=constructor" style="width: 100%; height: 415px;" allowfullscreen title="Адрес компании по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
+        <div class="map-adress-container">
+          <div class="map-adress">
+            <p>N&euml;rds design studio</p>
+            <p>191186, Санкт-Петербург, <br>ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="button map-button" href="#">Напишите нам</a>
+          </div>
+        </div>
       </section>
-
+      
       <div class="footer-columns container">
 
         <section class="footer-social">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social-list">
-            <li>
+            <li class="social-item link-vk">
               <a href="#">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
-            <li>
+            <li class="social-item link-fb">
               <a href="#">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
-            <li>
+            <li class="social-item link-inst" >
               <a href="#">
                 <span class="visually-hidden">Инстаграм</span>
               </a>
-          </li>
+            </li>
           </ul>
         </section>
 
@@ -235,9 +243,28 @@
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
-        
+
       </div>
 
     </footer>
+    
+    <section class="feedback modal-feedback"> <!--Класс modal-feedback скрывает попап с формой обратной связи-->
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="feedback-item">
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="feedback-item">
+          <label for="email">Ваш email:</label>
+          <input id="email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p class="textarea feedback-item">Текст письма:</p>
+        <textarea name="comment" id="comment" cols="100" rows="5" placeholder="В свободной форме"></textarea>
+        <button class="button feedback-button" type="button">Отправить</button>
+      </form>
+      <button class="feedback-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
   </body>
 </html>
