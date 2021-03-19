@@ -1198,10 +1198,6 @@ img {
   background-color: var(--basic-dark);
 }
 
-.product-item:not(:first-child) .product-popup{
-  display: none;
-} 
-
 .product-popup a {
   font-weight: 700;
   font-size: 18px;
@@ -1228,6 +1224,15 @@ img {
   color: var(--text-light);
   margin: 0;
   margin-bottom: 35px;
+}
+
+.popup-hidden {
+  display: none;
+}
+
+.product-item:hover .product-popup,
+.product-item:focus .product-popup{
+  display: flex;
 }
 
 /* Pagination */
