@@ -531,6 +531,7 @@ img {
 }
 
 .partner-item img {
+  display: block;
   object-fit: fill;
 }
 
