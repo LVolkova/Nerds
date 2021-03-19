@@ -146,6 +146,10 @@ img {
   margin-right: 45px;
 }
 
+.index-site-navigation li {
+  min-height: 30px;
+}
+
 .site-navigation li:nth-child(4n) {
   margin: 0;
 }
@@ -358,7 +362,6 @@ img {
 .button:hover,
 .button:focus {
   background-color: var(--accent-hover);
-  outline: none;
 }
 
 .button:active {
@@ -401,7 +404,7 @@ img {
   justify-content: space-between;
   border-bottom: 2px solid #EEEEEE;
   box-sizing: border-box;
-  padding-bottom: 66px;
+  padding-bottom: 64px;
 }
 
 .company {
@@ -439,7 +442,7 @@ img {
 
 .dash-list li {
   line-height: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 .dash-list li::before {
@@ -475,15 +478,16 @@ img {
 
 .statistics img {
   width: 360px;
-  height: 210px;
+  height: 208px;
   background-color: var(--basic-dark);
   margin-top: 38px;
   margin-bottom: 33px;
+  object-fit: contain;
 }
 
 .statistics-list {
   width: 360px;
-  margin-top: -12px;
+  margin-top: -14px;
   margin-left: -20px;
   border-spacing: 20px 11px;
   text-align: left;
@@ -524,6 +528,10 @@ img {
   width: 300px;
   text-align: center;
   outline-offset: -2px;
+}
+
+.partner-item img {
+  object-fit: fill;
 }
 
 .partner-item a {
@@ -574,6 +582,10 @@ img {
   background-color: var(--basic-dark);
   margin-top: 49px;
   margin-bottom: 70px;
+}
+
+.index-footer-map {
+  margin-top: 79px;
 }
 
 .footer-map iframe {
@@ -708,6 +720,7 @@ img {
 }
 
 .feedback textarea {
+  height: 118px;
   resize: none;
 }
 
@@ -715,7 +728,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 100px 84px 100px;
+  padding: 0 100px;
 }
 
 .feedback-item {
@@ -768,6 +781,7 @@ img {
 }
 
 .feedback-button {
+  min-height: 50px;
   width: 260px;
   padding: 0;
   padding: 17px 83px;
@@ -790,7 +804,6 @@ img {
 
 .feedback-close:hover,
 .feedback-close:focus {
-  outline: none;
   opacity: 1;
 }
 
