@@ -1183,6 +1183,12 @@ img {
   background: url("../img/browser-light.svg") no-repeat;
 }
 
+.product-item img {
+  width: 360px;
+  height: 580px;
+  object-fit: contain;
+}
+
 .product-item:nth-of-type(even) {
   margin-right: 0;
 }
@@ -1240,13 +1246,13 @@ img {
   margin-bottom: 35px;
 }
 
-.popup-hidden {
-  display: none;
+.product-item:hover .product-popup,
+.product-item:focus-within .product-popup {
+  display: flex;
 }
 
-.product-item:hover .product-popup,
-.product-item:focus .product-popup{
-  display: flex;
+.popup-hidden {
+  display: none;
 }
 
 /* Pagination */
