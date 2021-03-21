@@ -118,6 +118,7 @@ img {
 .main-header-logo {
   height: 66px;
   width: 160px;
+  z-index: 0;
 }
 
 .site-navigation {
@@ -244,7 +245,7 @@ img {
 .feature-item-text {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .feature-item:nth-child(2) .feature-item-text,
@@ -717,7 +718,7 @@ img {
 
 .feedback {
   position: fixed;
-  bottom: 180px;
+  top: 50px;
   left: 50%;
   margin-left: -480px;
   width: 960px;
