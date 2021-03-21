@@ -37,26 +37,26 @@
         <div class="container">
           <h2 class="visually-hidden">Отличительные черты</h2>
           <ul class="features-list">
-            <li class="feature-item feature-slide slide-current">
+            <li class="feature-item feature-slide">
               <p class="feature-item-title">Долго, дорого, скрупулезно.</p>
               <p class="feature-item-text">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения</p>
               <a class="button" href="blank.html">Узнать больше</a>
             </li>
             <li class="feature-item feature-slide">
-              <p>Любим математику <br>как никто другой</p>
-              <p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
+              <p class="feature-item-title">Любим математику <br>как никто другой</p>
+              <p class="feature-item-text">Никакого креатива, только математические формулы <br>для расчета идеальных пропорций</p>
               <a class="button" href="blank.html">Узнать больше</a>
             </li>
-            <li class="feature-item feature-slide">
-              <p>Только ночь, <br>только хардкор</p>
-              <p>Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
+            <li class="feature-item feature-slide slide-current">
+              <p class="feature-item-title">Только ночь, <br>только хардкор</p>
+              <p class="feature-item-text">Работать днем, как все? Мы против этого. <br>Ближе к полуночи работа только начинается.</p>
               <a class="button" href="blank.html">Узнать больше</a>
             </li>
           </ul>
           <div class="slider-controls">
-            <button type="button" name="but-1" class="slider-button current" aria-label="Первый слайд"></button>
-            <button type="button" name="but-2" class="slider-button" aria-label="Второй слайд"></button>
-            <button type="button" name="but-3" class="slider-button" aria-label="Третий слайд"></button>
+            <button type="button" name="but-1" class="slider-button button-one current" aria-label="Первый слайд"></button>
+            <button type="button" name="but-2" class="slider-button button-two" aria-label="Второй слайд"></button>
+            <button type="button" name="but-3" class="slider-button button-three" aria-label="Третий слайд"></button>
           </div>
       </div>
       </section>
@@ -197,23 +197,24 @@
 
     </footer>
     
-    <section class="feedback modal-feedback"> <!--Класс modal-feedback скрывает попап с формой обратной связи-->
+    <section class="feedback modal-feedback-close"> <!--Класс modal-feedback скрывает попап с формой обратной связи-->
       <h2>Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
           <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="name" id="name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="feedback-item">
           <label for="email">Ваш email:</label>
-          <input id="email" type="email" name="email" placeholder="email@example.com">
+          <input class="email" id="email" type="email" name="email" placeholder="email@example.com">
         </p>
         <label for="comment" class="textarea feedback-item">Текст письма:</label>
-        <textarea name="comment" id="comment" cols="100" rows="5" placeholder="В свободной форме"></textarea>
+        <textarea class="comment" name="comment" id="comment" cols="100" rows="5" placeholder="В свободной форме"></textarea>
         <button class="button feedback-button" type="submit">Отправить</button>
       </form>
       <button class="feedback-close" type="button" aria-label="Закрыть"></button>
     </section>
-
+    <script src="js/script.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>

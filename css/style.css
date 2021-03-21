@@ -223,25 +223,33 @@ img {
   background-position: center right;
 }
 
-.feature-item p {
-  max-width: 400px;
-}
-
 .feature-item-title {
   color: var(--text-dark);
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  max-width: 400px;
 
   margin-top: 0;
   margin-bottom: 25px;
   padding-top: 79px;
 }
 
+.feature-item:nth-child(2) .feature-item-title,
+.feature-item:nth-child(3) .feature-item-title{
+  max-width: 540px;
+  margin-bottom: 39px;
+}
+
 .feature-item-text {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 39px;
+}
+
+.feature-item:nth-child(2) .feature-item-text,
+.feature-item:nth-child(3) .feature-item-text {
+  margin-bottom: 27px;
 }
 
 .slider-controls {
@@ -531,11 +539,11 @@ img {
 }
 
 .partner-item img {
-  display: block;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .partner-item a {
+  display: block;
   opacity: 0.2;
 }
 
@@ -812,8 +820,12 @@ img {
   opacity: 0.1
 }
 
-.modal-feedback {
+.modal-feedback-close {
   display: none;
+}
+
+.modal-feedback-show {
+  display: block;
 }
 
 /* Catalog */

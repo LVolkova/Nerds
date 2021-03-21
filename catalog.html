@@ -248,23 +248,23 @@
 
     </footer>
     
-    <section class="feedback modal-feedback"> <!--Класс modal-feedback скрывает попап с формой обратной связи-->
+    <section class="feedback modal-feedback-close"> <!--Класс modal-feedback скрывает попап с формой обратной связи-->
       <h2>Напишите нам</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
           <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="name" id="name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="feedback-item">
           <label for="email">Ваш email:</label>
-          <input id="email" type="email" name="email" placeholder="email@example.com">
+          <input class="email" id="email" type="email" name="email" placeholder="email@example.com">
         </p>
         <label for="comment" class="textarea feedback-item">Текст письма:</label>
-        <textarea name="comment" id="comment" cols="100" rows="5" placeholder="В свободной форме"></textarea>
+        <textarea class="comment" name="comment" id="comment" cols="100" rows="5" placeholder="В свободной форме"></textarea>
         <button class="button feedback-button" type="submit">Отправить</button>
       </form>
       <button class="feedback-close" type="button" aria-label="Закрыть"></button>
     </section>
-
+    <script src="js/script.min.js"></script>
   </body>
 </html>
