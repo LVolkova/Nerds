@@ -80,6 +80,7 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+  overflow: hidden;
 }
 
 .active-page {
@@ -243,14 +244,17 @@ img {
 }
 
 .feature-item-text {
+  max-width: 400px;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 40px;
 }
 
+
 .feature-item:nth-child(2) .feature-item-text,
 .feature-item:nth-child(3) .feature-item-text {
   margin-bottom: 27px;
+  max-width: 416px;
 }
 
 .slider-controls {
@@ -622,9 +626,11 @@ img {
 
 .map-adress p {
   margin: 0;
+  color: var(--text-light);
 }
 
 .map-adress p:first-child {
+  color: var(--text-dark);
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -634,6 +640,10 @@ img {
 
 .map-adress p:nth-child(2) {
   margin-bottom: 18px;
+}
+
+.map-adress_tel {
+  color: inherit;
 }
 
 .map-button {
